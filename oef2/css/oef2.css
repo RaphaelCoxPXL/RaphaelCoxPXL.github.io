@@ -1,0 +1,44 @@
+/*naam: Raphael Cox 1 TIN B*/
+table, td, tr {
+    border: 1px solid black;
+}
+
+tbody td, tr {
+    padding: 8px 60px 8px 8px;
+}
+
+table {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+thead {
+    font-family: serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20pt;
+    color: white;
+    background-color: #0090e3;
+    text-align: center;
+}
+
+thead td {
+    padding: 10px;
+}
+
+tbody {
+    font-family: monospace;
+    font-size: 18pt;
+    color: black;
+    background-color: #f3f5cb;
+    text-align: right;
+}
+
+[rowspan="2"], [rowspan="4"] {
+    background-color: #f3f5cb;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}

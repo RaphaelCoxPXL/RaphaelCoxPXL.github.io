@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- naam:  Raphael Cox 1TIN B-->
+<head>
+    <meta charset="UTF-8">
+    <title>Oef3</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="assets/css/oef3.css">
+</head>
+<body>
+<h1>Bedankt voor je bestelling</h1>
+<form>
+    <fieldset><p>Lego trein</p>
+        <label class="aantal" for="Legotreinaantal">Aantal</label>
+        <img src="assets/images/train1.jpg" alt="Foto van een legotrein">
+        <select name="aantal_legotrein1" id="Legotreinaantal">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </fieldset>
+    <fieldset><p>Lego set</p>
+        <label class="aantal" for="Legosetaantal">Aantal</label>
+        <img src="assets/images/lego1.jpg" alt="Foto van een legoset">
+        <select name="aantal_lego1" id="Legosetaantal">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <p id="geenwidth%">Betaalwijze</p>
+        <section>
+            <label for="visa"></label>
+            <input type="radio" id="visa" name="betaalwijze" value="visa" checked>
+            <img class="betaalwijzefoto" src="assets/images/visa.png" alt="Foto van een visa logo">
+        </section>
+        <section>
+            <label for="mastercard"></label>
+            <input type="radio" id="mastercard" name="betaalwijze" value="mastercard">
+            <img id="mastercardfoto" class="betaalwijzefoto" src="assets/images/mastercard.png"
+                 alt="Foto van een mastercard logo">
+        </section>
+        <section>
+            <label for="overschrijving">Overschrijving</label>
+            <input type="radio" id="overschrijving" name="betaalwijze" value="overschrijving">
+        </section>
+    </fieldset>
+    <fieldset>
+        <label for="opmerkingen">Opmerkingen</label>
+        <textarea id="opmerkingen" name="opmerkingen" rows="10" cols="40">Kan u deze inpakken?</textarea>
+    </fieldset>
+    <fieldset>
+        <label class="locatieformulier" for="Straat">Straat</label>
+        <input type="text" name="Straat" id="Straat" value="Celestijnenlaan">
+        <label class="locatieformulier" id="nummerlabel" for="Nummer">Nummer</label>
+        <input class="locatieformulier" type="text" name="Nummer" id="Nummer" value="57">
+    </fieldset>
+    <fieldset>
+        <a href="bestel.html" target="_blank"></a>
+        <input type="submit" class="button" value="Bestellen">
+    </fieldset>
+</form>
+</body>
+</html>

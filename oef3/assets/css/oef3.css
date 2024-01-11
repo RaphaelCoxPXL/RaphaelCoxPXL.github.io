@@ -1,0 +1,104 @@
+/* naam: Raphael Cox 1TIN B
+*/
+
+/* 
+kleuren:
+    oranje: orange
+    wit:    white
+    blauw:  0090e3
+*/
+
+* {
+    box-sizing: border-box;
+    font-size: 18pt;
+}
+
+html {
+
+}
+
+body {
+    width: 700px;
+
+}
+
+fieldset {
+    border: solid 2px orange;
+    margin: 5px 5px 5px 0;
+    padding: 15px;
+    width: 700px;
+}
+
+.aantal {
+    margin: 10px;
+}
+
+select {
+    width: 6%;
+    float: left;
+}
+
+img {
+    height: auto;
+    width: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+label > select {
+    background-color: red;
+    color: red;
+}
+
+fieldset p {
+    display: inline-block;
+    margin: 1px;
+    float: left;
+    width: 25%;
+}
+
+.betaalwijzefoto {
+    height: 25px;
+    width: auto;
+    vertical-align: bottom;
+    margin-right: 0;
+}
+
+section {
+    float: left;
+    margin: 0 10px;
+}
+
+#geenwidth\% {
+    width: auto;
+}
+
+#mastercardfoto {
+    height: 30px;
+}
+
+input#visa, input#mastercard, input#overschrijving {
+    position: relative;
+    top: 4px;
+}
+
+.locatieformulier {
+    width: calc(100% / 6);
+}
+
+#Straat {
+    width: 50%;
+    margin-left: 40px;
+}
+
+#nummerlabel {
+    margin: 0 10px;
+}
+
+.button {
+    height: 70px;
+    width: 100%;
+    background-color: #0090e3;
+    color: white;
+    border: 2px solid #46a4c8;
+}

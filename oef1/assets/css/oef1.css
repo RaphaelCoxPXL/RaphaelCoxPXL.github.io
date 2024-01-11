@@ -1,0 +1,237 @@
+/*naam: Raphael Cox 1 TIN B */
+
+/*
+    blauw   0090e3
+    oranje
+    geel    f0d10a
+    wit     white
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    top: 89px;
+}
+
+/*NAVIGATION BAR*/
+nav {
+    font-family: "monospace", sans-serif;
+    background-color: orange;
+    float: left;
+    width: 100%;
+    position: fixed;
+    top: 0; /* anders gat bij nav, kan ook anders ogpelost worden --> nog toevoegen*/
+    left: 0;
+    z-index: 1; /*anders bij scrollen black friday poster over nav*/
+}
+
+nav h1 {
+    display: inline;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    font-size: 28px;
+}
+
+nav li {
+    float: right;
+    margin: 5px;
+    position: relative;
+    right: 50px;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+nav, nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav span {
+    background-color: #0090e3;
+    padding: 10px;
+    border-radius: 50px;
+    border: white 3px solid;
+}
+
+#winkelwagentekst {
+    display: none;
+}
+
+nav li::marker {
+    color: orange;
+}
+
+nav img {
+    vertical-align: middle;
+}
+
+main {
+    background-color: white;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+/*BEGIN IMAGES*/
+main img {
+    position: relative;
+}
+
+.sectionone img {
+    width: 100%;
+    height: 100%;
+    /*  right: 15%; */
+}
+
+.blackfridayposter {
+    margin: 10px 0 10px;
+    width: 100%;
+    height: 100%;
+    /*    right: 40px; */
+}
+
+figure {
+
+}
+
+/*END IMAGES*/
+
+/*BEGIN ARTICLE ALIGNMENT*/
+.sectionone article {
+    float: left;
+    width: 25%;
+}
+
+figure, section h2 {
+    display: inline;
+    margin: 0;
+}
+
+/*END ARTICLE ALIGNMENT*/
+
+.sectionone article {
+    background-color: white;
+}
+
+/*BEGIN REST OF MAIN*/
+h2 {
+    color: #0090e3;
+}
+
+.sectiontwo article {
+    float: left;
+    width: calc(100% / 6);
+}
+
+.sectiontwo img {
+    border-radius: 5px;
+    padding: 5px;
+    border: dotted #f0d10a 4px;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: auto;
+    background: white;
+    bottom: 75px;
+    left: 160px;
+}
+
+.smallboxlogooffset {
+    bottom: 55px;
+}
+
+figure > .heart {
+    margin: 2px;
+    position: relative;
+    border: solid white 2px;
+    border-radius: 10px;
+    padding: 0;
+    z-index: 1;
+}
+
+#recentbekeken {
+    clear: both;
+    width: 100%;
+    margin: 40px 40px 40px 0;
+}
+
+/* article {
+    margin: 1%;
+} */
+
+/*21/11 werk tot nu toe*/
+
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .blackfridayposter {
+        display: none;
+    }
+
+    nav {
+        height: auto;
+    }
+
+    nav li, nav h1, nav ul {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        display: block;
+        left: 0;
+    }
+
+    nav li {
+        position: relative;
+    }
+
+    #navh1 {
+        position: relative;
+        top: -5px;
+    }
+
+    nav ul {
+        height: 160px;
+    }
+
+    nav img, #winkelwagenspan {
+        display: none
+    }
+
+    #winkelwagentekst {
+        display: inline;
+    }
+
+    .sectionone {
+        padding-top: 222px;
+    }
+
+    .sectionone article {
+        width: 50%;
+    }
+
+    .sectiontwo {
+        display: none;
+    }
+
+    li:hover {
+        background-color: #f0d10a;
+    }
+
+    @media screen and (max-width: 600px) {
+        .sectionone article {
+            width: 100%;
+        }
+    }
+}
+
