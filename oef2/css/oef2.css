@@ -35,7 +35,7 @@ tbody {
     text-align: right;
 }
 
-[rowspan="2"], [rowspan="4"] {
+[rowspan="2"], [rowspan="3"], [rowspan="4"] {
     background-color: #f3f5cb;
 }
 
